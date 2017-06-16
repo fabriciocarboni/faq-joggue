@@ -26,9 +26,9 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr th:each="convidado : ${convidados}">
-						<td th:text="${convidado.titulo}"></td>
-						<td th:text="${convidado.resposta}"></td>
+					<tr th:each="pergunta : ${perguntas}">
+						<td th:text="${pergunta.titulo}"></td>
+						<td th:text="${pergunta.resposta}"></td>
 					</tr>
 				</tbody>
 			</table>

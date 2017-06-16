@@ -16,7 +16,7 @@ public class FaqController {
 	 * da preocupação de como receber esse objeto na classe
 	 */
 	@Autowired 
-	private Perguntas convidados; 
+	private Perguntas perguntas; 
 	/**
 	 * O repositorio convidados foi criado numa interface Convidados que extends 
 	 * JpaRepository.
@@ -37,7 +37,7 @@ public class FaqController {
 		
 		//Permite adicionar objetos para serem usados no HTML
 		// ou seja, estou adicionando um objeto para a view.
-		modelAndView.addObject("convidados", convidados.findAll()); // retorna um objeto list de convidados
+		modelAndView.addObject("perguntas", perguntas.findAll()); // retorna um objeto list de convidados
 		
 		return modelAndView;
 	}
