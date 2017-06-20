@@ -28,7 +28,7 @@ public class FaqController {
 	 * requisição HTTP do tipo GET para /convidados
 	 * @return
 	 */
-	@GetMapping("/faq")
+	@GetMapping("/")
 	public ModelAndView listar() {
 		
 		//Cria um objeto do tipo ModelAndView, retorna tb o nome da view
